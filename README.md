@@ -31,6 +31,13 @@
 
 ---
 
+## 🌐 在线访问地址
+
+* **Cloudflare Pages 全球加速访问**：[https://midea-dishwasher-sentiment-report.pages.dev/](https://midea-dishwasher-sentiment-report.pages.dev/)
+* **GitHub Pages 备用访问**：[https://huron09280.github.io/midea-dishwasher-sentiment-report/](https://huron09280.github.io/midea-dishwasher-sentiment-report/)
+
+---
+
 ## 🖥 交互式报告预览
 
 本项目提供完全单文件化的极简交互报告 \`index.html\`：
