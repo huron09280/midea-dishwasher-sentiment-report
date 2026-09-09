@@ -133,20 +133,230 @@
       </div>
     </section>
 
-    <!-- Part 1: 客服处理客观实录 (白描四则 + 严格区分蓝V与营销号) -->
+    <!-- 板块一：近 3 个月舆情声量演变与生命周期走势（2026 Q3） -->
     <section class="card p-6 sm:p-8 space-y-6">
-      <div class="flex items-center justify-between border-b border-zinc-100 pb-4">
-        <div class="flex items-center gap-2">
-          <svg class="w-5 h-5 text-zinc-700 icon" viewBox="0 0 24 24" stroke="currentColor">
-            <circle cx="12" cy="12" r="10"></circle>
-            <line x1="12" y1="16" x2="12" y2="12"></line>
-            <line x1="12" y1="8" x2="12.01" y2="8"></line>
-          </svg>
-          <h2 class="text-base sm:text-lg font-semibold text-zinc-900">官方专人处理客观事实核验</h2>
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-zinc-100 pb-4">
+        <div>
+          <div class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-zinc-700 icon" viewBox="0 0 24 24" stroke="currentColor">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            <h2 class="text-base sm:text-lg font-semibold text-zinc-900">近 3 个月舆情声量演变与生命周期走势（2026 Q3）</h2>
+          </div>
+          <p class="text-xs text-zinc-400 mt-0.5">客观呈现「618交付收货 → 7月试用磨合 → 8月集中暴雷 → 9月次生维权」完整周期演变</p>
         </div>
-        <span class="text-xs text-zinc-400 font-mono">2,221 条评论核验结果</span>
+        <span class="px-2.5 py-1 rounded text-[11px] bg-rose-950 text-rose-200 font-medium self-start sm:self-auto">8月为负面集中爆发顶峰（占比 35.4%）</span>
       </div>
 
+      <!-- 四阶段客观走势卡片 -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+        <div class="p-4 bg-zinc-50/70 rounded-lg space-y-2">
+          <div class="flex justify-between items-center">
+            <span class="font-semibold text-zinc-900 text-sm">2026年6月 (37篇)</span>
+            <span class="px-2 py-0.5 rounded text-[10px] bg-zinc-900 text-white font-medium">大促种草交付</span>
+          </div>
+          <div class="text-[11px] text-zinc-500 font-mono">质量客诉：11篇 (29.7%)</div>
+          <p class="text-zinc-600 leading-relaxed">
+            以 618 大促比价、选购犹豫（西门子 vs 美的）、国补满减凑单为主。月末开始出现首批新机进场尺寸不合与拆箱翻新质疑。
+          </p>
+        </div>
+
+        <div class="p-4 bg-zinc-50/70 rounded-lg space-y-2">
+          <div class="flex justify-between items-center">
+            <span class="font-semibold text-zinc-900 text-sm">2026年7月 (51篇)</span>
+            <span class="px-2 py-0.5 rounded text-[10px] bg-amber-950 text-amber-200 font-medium">故障潜伏磨合</span>
+          </div>
+          <div class="text-[11px] text-zinc-500 font-mono">质量客诉：27篇 (52.9%)</div>
+          <p class="text-zinc-600 leading-relaxed">
+            机器使用满 1 个月左右，台上款（UP2 Pro）密集反馈洗不干净与内部摆盘空间逼仄；P60 报 E4 错误代码，报修沟通摩擦显现。
+          </p>
+        </div>
+
+        <div class="p-4 bg-rose-50/50 rounded-lg space-y-2">
+          <div class="flex justify-between items-center">
+            <span class="font-semibold text-rose-950 text-sm">2026年8月 (96篇)</span>
+            <span class="px-2 py-0.5 rounded text-[10px] bg-rose-900 text-white font-medium">集中暴雷峰值</span>
+          </div>
+          <div class="text-[11px] text-rose-700 font-mono font-medium">质量客诉：34篇 (35.4%)</div>
+          <p class="text-zinc-700 leading-relaxed">
+            大促批次使用满 2 个月，<strong>内胆生锈、门板密封不良漏水、水蒸气侵入触控屏、铰链锈蚀</strong>集中暴发，博主发起连续维权帖。
+          </p>
+        </div>
+
+        <div class="p-4 bg-zinc-50/70 rounded-lg space-y-2">
+          <div class="flex justify-between items-center">
+            <span class="font-semibold text-zinc-900 text-sm">2026年9月上旬 (31篇)</span>
+            <span class="px-2 py-0.5 rounded text-[10px] bg-zinc-900 text-white font-medium">次生维权延展</span>
+          </div>
+          <div class="text-[11px] text-zinc-500 font-mono">质量客诉：13篇 (41.9%)</div>
+          <p class="text-zinc-600 leading-relaxed">
+            前 9 天产出 31 篇笔记。维权帖长尾互动走高，竞品销售规模化控评截流，部分博主在久拖不决后选择折价闲鱼二手转让。
+          </p>
+        </div>
+      </div>
+
+      <!-- 月度趋势与槽点分布双图表并列 -->
+      <div class="grid lg:grid-cols-3 gap-6 pt-2">
+        <div class="lg:col-span-2 space-y-3">
+          <div class="flex items-center justify-between">
+            <div class="text-xs font-semibold text-zinc-800 flex items-center gap-1.5">
+              <svg class="w-4 h-4 text-zinc-500 icon" viewBox="0 0 24 24" stroke="currentColor">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+              </svg>
+              <span>近 3 个月月度笔记总量与负面走势</span>
+            </div>
+            <div class="flex items-center gap-2 text-xs">
+              <span class="px-2 py-0.5 rounded bg-zinc-900 text-white font-mono text-[10px]">全量笔记</span>
+              <span class="px-2 py-0.5 rounded bg-rose-900 text-white font-mono text-[10px]">质量/售后客诉</span>
+            </div>
+          </div>
+          <div class="h-56">
+            <canvas id="monthlyChart"></canvas>
+          </div>
+        </div>
+
+        <div class="space-y-3">
+          <div class="text-xs font-semibold text-zinc-800 flex items-center gap-1.5">
+            <svg class="w-4 h-4 text-zinc-500 icon" viewBox="0 0 24 24" stroke="currentColor">
+              <line x1="18" y1="20" x2="18" y2="10"></line>
+              <line x1="12" y1="20" x2="12" y2="4"></line>
+              <line x1="6" y1="20" x2="6" y2="14"></line>
+            </svg>
+            <span>核心槽点分类分布格局</span>
+          </div>
+          <div class="h-56">
+            <canvas id="categoryChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 板块二：近 3 个月受灾机型风险排行榜与主要病灶 -->
+    <section class="card p-6 sm:p-8 space-y-6">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-zinc-100 pb-4">
+        <div>
+          <div class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-zinc-700 icon" viewBox="0 0 24 24" stroke="currentColor">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="8" x2="12" y2="12"></line>
+              <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+            <h2 class="text-base sm:text-lg font-semibold text-zinc-900">近 3 个月受灾机型风险排行榜与主要病灶</h2>
+          </div>
+          <p class="text-xs text-zinc-400 mt-0.5">深入穿透 215 篇笔记及相关评论中各具体机型的故障归类与投诉密集度</p>
+        </div>
+        <span class="text-xs text-zinc-400 font-mono">生锈与漏水居首位</span>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+        <div class="p-4 bg-zinc-50/70 rounded-lg space-y-3">
+          <div class="flex justify-between items-start">
+            <div>
+              <span class="font-semibold text-zinc-900 text-sm">X6S Max / X6 Max</span>
+              <div class="text-[11px] text-zinc-400 mt-0.5">嵌入式 15套 / 16套</div>
+            </div>
+            <span class="px-2 py-0.5 rounded text-[10px] bg-rose-900 text-white font-medium">16 篇提及 · 极高危</span>
+          </div>
+          <div class="text-[11px] text-zinc-500">
+            涉及博主：@超爱芝麻糊、@不要为了这个代号而纠结、@月亮 等
+          </div>
+          <div class="bg-white p-3 rounded space-y-1.5 leading-relaxed">
+            <div class="font-semibold text-rose-950 flex items-center gap-1">
+              <span class="w-1.5 h-1.5 rounded-full bg-rose-700"></span>
+              核心病灶：内胆与碗篮生锈
+            </div>
+            <div class="text-zinc-600">· 使用不到10次即出现底部不锈钢锈斑</div>
+            <div class="text-zinc-600">· 碗篮涂层开裂剥落、铰链弹簧锈蚀</div>
+            <div class="text-zinc-600">· 售后整机换机后同位置再度生锈</div>
+          </div>
+        </div>
+
+        <div class="p-4 bg-zinc-50/70 rounded-lg space-y-3">
+          <div class="flex justify-between items-start">
+            <div>
+              <span class="font-semibold text-zinc-900 text-sm">V9 Pro / V9</span>
+              <div class="text-[11px] text-zinc-400 mt-0.5">嵌入式 14套 / 15套</div>
+            </div>
+            <span class="px-2 py-0.5 rounded text-[10px] bg-rose-900 text-white font-medium">10 篇提及 · 高危</span>
+          </div>
+          <div class="text-[11px] text-zinc-500">
+            涉及博主：@服装加工厂、@momo、@Lonyy 等
+          </div>
+          <div class="bg-white p-3 rounded space-y-1.5 leading-relaxed">
+            <div class="font-semibold text-rose-950 flex items-center gap-1">
+              <span class="w-1.5 h-1.5 rounded-full bg-rose-700"></span>
+              核心病灶：密封不良与漏水
+            </div>
+            <div class="text-zinc-600">· 高温水蒸气渗入触控屏形成冷凝水珠</div>
+            <div class="text-zinc-600">· 门体下沿与踢脚线渗水致橱柜受潮受损</div>
+            <div class="text-zinc-600">· 喷淋臂塑料材质异味与重油污洗净度差</div>
+          </div>
+        </div>
+
+        <div class="p-4 bg-zinc-50/70 rounded-lg space-y-3">
+          <div class="flex justify-between items-start">
+            <div>
+              <span class="font-semibold text-zinc-900 text-sm">UP2 Pro / U2P (小魔方)</span>
+              <div class="text-[11px] text-zinc-400 mt-0.5">台上免安装款</div>
+            </div>
+            <span class="px-2 py-0.5 rounded text-[10px] bg-amber-950 text-amber-200 font-medium">10 篇提及 · 体验差</span>
+          </div>
+          <div class="text-[11px] text-zinc-500">
+            涉及博主：@墨雨墨雨、@点点不熬夜、@酸辣粉少放醋 等
+          </div>
+          <div class="bg-white p-3 rounded space-y-1.5 leading-relaxed">
+            <div class="font-semibold text-amber-950 flex items-center gap-1">
+              <span class="w-1.5 h-1.5 rounded-full bg-amber-700"></span>
+              核心病灶：洗涤残留与容量逼仄
+            </div>
+            <div class="text-zinc-600">· 免安装水流压强弱，洗净率差成集体槽点</div>
+            <div class="text-zinc-600">· 碗篮内部布局难插中式深碗，加装扎带改造</div>
+            <div class="text-zinc-600">· 专用小型洗碗凝珠单价偏高致转手闲鱼</div>
+          </div>
+        </div>
+
+        <div class="p-4 bg-zinc-50/70 rounded-lg space-y-3">
+          <div class="flex justify-between items-start">
+            <div>
+              <span class="font-semibold text-zinc-900 text-sm">P60 / T7 / E7 Pro / M10</span>
+              <div class="text-[11px] text-zinc-400 mt-0.5">主销普及型款</div>
+            </div>
+            <span class="px-2 py-0.5 rounded text-[10px] bg-zinc-900 text-white font-medium">9 篇提及 · 服务摩擦</span>
+          </div>
+          <div class="text-[11px] text-zinc-500">
+            涉及博主：@我是杠精、@舒馨之家、@今天我叫白小白 等
+          </div>
+          <div class="bg-white p-3 rounded space-y-1.5 leading-relaxed">
+            <div class="font-semibold text-zinc-950 flex items-center gap-1">
+              <span class="w-1.5 h-1.5 rounded-full bg-zinc-700"></span>
+              核心病灶：报修虚假结单与排水故障
+            </div>
+            <div class="text-zinc-600">· P60 多次报 E4 代码，系统未修先自动结单</div>
+            <div class="text-zinc-600">· T7 铰链断裂与软水器爆盐结晶堵塞</div>
+            <div class="text-zinc-600">· E7 Pro 排水管返流发黑恶臭、烘干不干</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 板块三：「专人处理」专项效能全面审计（近3个月真实实录） -->
+    <section class="card p-6 sm:p-8 space-y-6">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-zinc-100 pb-4">
+        <div>
+          <div class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-zinc-700 icon" viewBox="0 0 24 24" stroke="currentColor">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <polyline points="9 12 11 14 15 10"></polyline>
+            </svg>
+            <h2 class="text-base sm:text-lg font-semibold text-zinc-900">「专人处理」专项效能全面审计（近3个月真实实录）</h2>
+          </div>
+          <p class="text-xs text-zinc-400 mt-0.5">企业蓝V认证账号【美的官方客服】(IP: 广东) 实际接入机制、留痕话术与公信力评估</p>
+        </div>
+        <span class="px-2.5 py-1 rounded text-[11px] bg-rose-950 text-rose-200 font-medium self-start sm:self-auto">警惕：套话导流与线下脱节引发二次反噬</span>
+      </div>
+
+      <!-- 四大审计实录维度 (严格区分蓝V与营销号) -->
       <div class="grid md:grid-cols-2 gap-6 text-xs text-zinc-600 leading-relaxed">
         <div class="space-y-2 border-l-2 border-zinc-200 pl-4">
           <div class="flex items-center justify-between">
@@ -160,7 +370,7 @@
             <span class="px-2 py-0.5 rounded text-[10px] bg-blue-900 text-white font-medium">仅「美的官方客服」</span>
           </div>
           <p>
-            经平台身份认证核验，<strong>企业蓝V账号「美的官方客服」是唯一的品牌官方售后处理主体</strong>，在 215 篇笔记中共留言 <strong>71 次</strong>（覆盖 65 篇笔记）。
+            经平台身份认证核验，<strong>企业蓝V账号「美的官方客服」是唯一的品牌官方售后处理主体</strong>，在 215 篇笔记中共留言 <strong>71 次</strong>（覆盖 65 篇笔记，介入率 30.2%）。
           </p>
           <p class="text-zinc-500">
             其余诸如「COLMO佛山体验馆」、「京东电器美的厨热推荐官」、「自营直播间」、「小美」等账号，均为<strong>销售渠道号、门店分销号或个人营销号</strong>（共抓取到 21 条跟帖），其主要行为为带货推销或引流，<strong>不具备官方售后介入与客诉调处职能</strong>。
@@ -176,15 +386,15 @@
                 <line x1="8" y1="2" x2="8" y2="6"></line>
                 <line x1="3" y1="10" x2="21" y2="10"></line>
               </svg>
-              <span>二、蓝V客服触发机制与时效</span>
+              <span>二、蓝V客服触发机制与响应窗口</span>
             </div>
-            <span class="px-2 py-0.5 rounded text-[10px] bg-rose-900 text-white font-medium">高危贴 50.0%</span>
+            <span class="px-2 py-0.5 rounded text-[10px] bg-rose-900 text-white font-medium">高危客诉 50.0%</span>
           </div>
           <p>
-            带有“生锈、漏水、退货、维权、避坑、千万别买”等高危词汇的笔记，蓝V官方客服的接入率为 <strong>50.0%</strong>，留言时间集中在发帖后 12 至 36 小时之间。
+            带有“生锈、漏水、退货、维权、避坑、千万别买”等高危词汇的笔记，蓝V官方客服的介入率达 <strong>50.0% (24 / 48 篇)</strong>，留言时间集中在发帖后 <strong>12 至 36 小时</strong> 之间，呈现工作日排班与系统关键词报警特征。
           </p>
           <p class="text-zinc-500">
-            常规使用、选购与安装咨询笔记，蓝V官方客服留言率仅为 <strong>19.0%</strong>，呈现出以公关舆情灭火为优先的排班介入机制。
+            常规使用、选购与安装咨询笔记，蓝V官方客服留言率仅为 <strong>19.0%</strong>，呈现出以公关舆情灭火为绝对优先的介入机制。
           </p>
         </div>
 
@@ -197,12 +407,12 @@
                 <line x1="16" y1="13" x2="8" y2="13"></line>
                 <line x1="16" y1="17" x2="8" y2="17"></line>
               </svg>
-              <span>三、留言文本结构</span>
+              <span>三、100% 格式化套话导流私信</span>
             </div>
-            <span class="px-2 py-0.5 rounded text-[10px] bg-zinc-900 text-white font-medium">100% 格式化套话</span>
+            <span class="px-2 py-0.5 rounded text-[10px] bg-zinc-900 text-white font-medium">100% 模板留痕</span>
           </div>
           <p>
-            「美的官方客服」留言文本全部为标准化客套表达，核心结构统一为“致歉 + 表态重视品质 + 请发帖人关注并私信留下电话和地址”。
+            「美的官方客服」在公域<strong>不作任何技术答疑或实质答复</strong>，其核心结构统一为“致歉 + 表态重视品质 + 请发帖人关注并私信留下电话和地址”，旨在迅速将公开争论转移至非公开渠道。
           </p>
           <div class="bg-zinc-50 p-2.5 rounded text-zinc-600 font-mono text-[11px] leading-relaxed">
             “亲爱哒用户您好，看到您反馈的问题小美深感抱歉……辛苦您私信提供一下联系电话☎️和安装地址🏠，为您安排专人核实处理~”
@@ -216,7 +426,7 @@
                 <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
                 <polyline points="17 6 23 6 23 12"></polyline>
               </svg>
-              <span>四、闭环与跟进状态</span>
+              <span>四、线下脱节与公域零结案</span>
             </div>
             <span class="px-2 py-0.5 rounded text-[10px] bg-zinc-900 text-white font-medium">公域 0 结案</span>
           </div>
@@ -224,114 +434,77 @@
             在已留痕的 65 篇笔记公开评论区中，<strong>未见官方客服后续发表任何“问题已解决/已换机完毕”的公开结案留言</strong>。
           </p>
           <p class="text-zinc-500">
-            发帖人及围观用户在官方留言下方追问或反问累计记录 26 次，主要指出：私信后长时间无回复、线下服务人员归咎于水质拒不换机、系统无故自动结单等。
+            发帖人及围观用户在官方留言下方追问或反问累计记录 <strong>26 次</strong>，集中指出：私信后无回复、线下师傅归咎于水质硬度拒不换机、系统无故自动结单等。
           </p>
         </div>
       </div>
-    </section>
 
-    <!-- Part 2: 用户针对官方留言的真实追评 (极简无边框加深标签) -->
-    <section class="card p-6 sm:p-8 space-y-4">
-      <div class="flex items-center justify-between border-b border-zinc-100 pb-4">
-        <div class="flex items-center gap-2">
-          <svg class="w-5 h-5 text-zinc-700 icon" viewBox="0 0 24 24" stroke="currentColor">
-            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-          </svg>
-          <h2 class="text-base sm:text-lg font-semibold text-zinc-900">公开评论区：用户针对「美的官方客服」留言的实际追评记录</h2>
-        </div>
-        <span class="text-xs text-zinc-400 font-mono">真实原声抽样</span>
-      </div>
-
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 text-xs">
-        <div class="p-3.5 bg-zinc-50/60 rounded-lg space-y-2">
-          <div class="flex justify-between items-center text-[11px]">
-            <span class="font-medium text-zinc-700">@我是杠精，别和我杠 (IP: 重庆)</span>
-            <span class="px-1.5 py-0.5 rounded text-[10px] bg-rose-900 text-white font-medium">连续3篇维权</span>
-          </div>
-          <p class="text-zinc-900 font-medium leading-relaxed">“你们跟进啥？售后还在那打太极，天天忽悠我。”</p>
-          <div class="text-[10px] text-zinc-400 pt-1">↳ 回复【美的官方客服】模板留言</div>
-        </div>
-
-        <div class="p-3.5 bg-zinc-50/60 rounded-lg space-y-2">
-          <div class="flex justify-between items-center text-[11px]">
-            <span class="font-medium text-zinc-700">@不要为了这个代号而纠结 (IP: 广东)</span>
-            <span class="px-1.5 py-0.5 rounded text-[10px] bg-amber-900 text-white font-medium">直播间被禁言</span>
-          </div>
-          <p class="text-zinc-900 font-medium leading-relaxed">“我问生锈的问题，被踢出直播间，说我是来捣乱的。”</p>
-          <div class="text-[10px] text-zinc-400 pt-1">↳ 回复【美的官方客服】致歉文本</div>
-        </div>
-
-        <div class="p-3.5 bg-zinc-50/60 rounded-lg space-y-2">
-          <div class="flex justify-between items-center text-[11px]">
-            <span class="font-medium text-zinc-700">@momo (IP: 四川)</span>
-            <span class="px-1.5 py-0.5 rounded text-[10px] bg-zinc-900 text-white font-medium">私信后无下文</span>
-          </div>
-          <p class="text-zinc-900 font-medium leading-relaxed">“私信发了电话，根本没回复哈。”</p>
-          <div class="text-[10px] text-zinc-400 pt-1">↳ 反映私信建立后无实际跟进</div>
-        </div>
-
-        <div class="p-3.5 bg-zinc-50/60 rounded-lg space-y-2">
-          <div class="flex justify-between items-center text-[11px]">
-            <span class="font-medium text-zinc-700">@最fat美少女 (IP: 广东)</span>
-            <span class="px-1.5 py-0.5 rounded text-[10px] bg-rose-900 text-white font-medium">要求退货</span>
-          </div>
-          <p class="text-zinc-900 font-medium leading-relaxed">“不要说那些没用的，可以退货的话就联系我吧。”</p>
-          <div class="text-[10px] text-zinc-400 pt-1">↳ 对私信索取电话的明确回复</div>
-        </div>
-
-        <div class="p-3.5 bg-zinc-50/60 rounded-lg space-y-2">
-          <div class="flex justify-between items-center text-[11px]">
-            <span class="font-medium text-zinc-700">@匿名用户 (IP: 湖北)</span>
-            <span class="px-1.5 py-0.5 rounded text-[10px] bg-zinc-900 text-white font-medium">推给水质环境</span>
-          </div>
-          <p class="text-zinc-900 font-medium leading-relaxed">“30多天了，你为我解决了吗？修不好就说是环境问题。”</p>
-          <div class="text-[10px] text-zinc-400 pt-1">↳ 对售后推诿水质环境的跟帖</div>
-        </div>
-
-        <div class="p-3.5 bg-zinc-50/60 rounded-lg space-y-2">
-          <div class="flex justify-between items-center text-[11px]">
-            <span class="font-medium text-zinc-700">@大米的画 (IP: 山东)</span>
-            <span class="px-1.5 py-0.5 rounded text-[10px] bg-zinc-900 text-white font-medium">建议手洗</span>
-          </div>
-          <p class="text-zinc-900 font-medium leading-relaxed">“买美的洗碗机的人就活该手洗？”</p>
-          <div class="text-[10px] text-zinc-400 pt-1">↳ 针对售后建议“手洗”的反问</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Part 3: 声量走势与分类分布 (极简图表) -->
-    <section class="grid lg:grid-cols-3 gap-6">
-      <div class="card p-6 lg:col-span-2 space-y-4">
+      <!-- 用户针对官方客服留言的真实追评反响抽样 -->
+      <div class="pt-4 border-t border-zinc-100 space-y-3">
         <div class="flex items-center justify-between">
-          <div class="flex items-center gap-2">
-            <svg class="w-4 h-4 text-zinc-700 icon" viewBox="0 0 24 24" stroke="currentColor">
-              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+          <div class="text-xs font-semibold text-zinc-800 flex items-center gap-1.5">
+            <svg class="w-4 h-4 text-zinc-500 icon" viewBox="0 0 24 24" stroke="currentColor">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
             </svg>
-            <h3 class="text-sm font-semibold text-zinc-900">近 3 个月月度笔记与负面走势</h3>
+            <span>公开评论区：用户针对「美的官方客服」留言的真实追评反响（26 条留痕抽样）</span>
           </div>
-          <div class="flex items-center gap-2 text-xs">
-            <span class="px-2 py-0.5 rounded bg-zinc-900 text-white font-mono text-[10px]">全部笔记</span>
-            <span class="px-2 py-0.5 rounded bg-rose-900 text-white font-mono text-[10px]">质量/售后贴</span>
-          </div>
+          <span class="text-[11px] text-zinc-400 font-mono">真实原声实录</span>
         </div>
-        <div class="h-56">
-          <canvas id="monthlyChart"></canvas>
-        </div>
-      </div>
 
-      <div class="card p-6 space-y-4">
-        <div class="flex items-center justify-between">
-          <div class="flex items-center gap-2">
-            <svg class="w-4 h-4 text-zinc-700 icon" viewBox="0 0 24 24" stroke="currentColor">
-              <line x1="18" y1="20" x2="18" y2="10"></line>
-              <line x1="12" y1="20" x2="12" y2="4"></line>
-              <line x1="6" y1="20" x2="6" y2="14"></line>
-            </svg>
-            <h3 class="text-sm font-semibold text-zinc-900">核心反馈类别分布</h3>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 text-xs">
+          <div class="p-3.5 bg-zinc-50/60 rounded-lg space-y-2">
+            <div class="flex justify-between items-center text-[11px]">
+              <span class="font-medium text-zinc-700">@我是杠精，别和我杠 (IP: 重庆)</span>
+              <span class="px-1.5 py-0.5 rounded text-[10px] bg-rose-900 text-white font-medium">连续3篇维权</span>
+            </div>
+            <p class="text-zinc-900 font-medium leading-relaxed">“你们跟进啥？售后还在那打太极，天天忽悠我。”</p>
+            <div class="text-[10px] text-zinc-400 pt-1">↳ 回复【美的官方客服】模板留言</div>
           </div>
-        </div>
-        <div class="h-56">
-          <canvas id="categoryChart"></canvas>
+
+          <div class="p-3.5 bg-zinc-50/60 rounded-lg space-y-2">
+            <div class="flex justify-between items-center text-[11px]">
+              <span class="font-medium text-zinc-700">@不要为了这个代号而纠结 (IP: 广东)</span>
+              <span class="px-1.5 py-0.5 rounded text-[10px] bg-amber-900 text-white font-medium">直播间被禁言</span>
+            </div>
+            <p class="text-zinc-900 font-medium leading-relaxed">“我问生锈的问题，被踢出直播间，说我是来捣乱的。”</p>
+            <div class="text-[10px] text-zinc-400 pt-1">↳ 回复【美的官方客服】致歉文本</div>
+          </div>
+
+          <div class="p-3.5 bg-zinc-50/60 rounded-lg space-y-2">
+            <div class="flex justify-between items-center text-[11px]">
+              <span class="font-medium text-zinc-700">@momo (IP: 四川)</span>
+              <span class="px-1.5 py-0.5 rounded text-[10px] bg-zinc-900 text-white font-medium">私信后无下文</span>
+            </div>
+            <p class="text-zinc-900 font-medium leading-relaxed">“私信发了电话，根本没回复哈。”</p>
+            <div class="text-[10px] text-zinc-400 pt-1">↳ 反映私信建立后无实际跟进</div>
+          </div>
+
+          <div class="p-3.5 bg-zinc-50/60 rounded-lg space-y-2">
+            <div class="flex justify-between items-center text-[11px]">
+              <span class="font-medium text-zinc-700">@最fat美少女 (IP: 广东)</span>
+              <span class="px-1.5 py-0.5 rounded text-[10px] bg-rose-900 text-white font-medium">要求退货</span>
+            </div>
+            <p class="text-zinc-900 font-medium leading-relaxed">“不要说那些没用的，可以退货的话就联系我吧。”</p>
+            <div class="text-[10px] text-zinc-400 pt-1">↳ 对私信索取电话的明确回复</div>
+          </div>
+
+          <div class="p-3.5 bg-zinc-50/60 rounded-lg space-y-2">
+            <div class="flex justify-between items-center text-[11px]">
+              <span class="font-medium text-zinc-700">@匿名用户 (IP: 湖北)</span>
+              <span class="px-1.5 py-0.5 rounded text-[10px] bg-zinc-900 text-white font-medium">推给水质环境</span>
+            </div>
+            <p class="text-zinc-900 font-medium leading-relaxed">“30多天了，你为我解决了吗？修不好就说是环境问题。”</p>
+            <div class="text-[10px] text-zinc-400 pt-1">↳ 对售后推诿水质环境的跟帖</div>
+          </div>
+
+          <div class="p-3.5 bg-zinc-50/60 rounded-lg space-y-2">
+            <div class="flex justify-between items-center text-[11px]">
+              <span class="font-medium text-zinc-700">@大米的画 (IP: 山东)</span>
+              <span class="px-1.5 py-0.5 rounded text-[10px] bg-zinc-900 text-white font-medium">建议手洗</span>
+            </div>
+            <p class="text-zinc-900 font-medium leading-relaxed">“买美的洗碗机的人就活该手洗？”</p>
+            <div class="text-[10px] text-zinc-400 pt-1">↳ 针对售后建议“手洗”的反问</div>
+          </div>
         </div>
       </div>
     </section>
