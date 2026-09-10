@@ -31,9 +31,9 @@
     ::-webkit-scrollbar-thumb:hover { background: #a1a1aa; }
   </style>
 </head>
-<body class="min-h-screen py-10 px-4 sm:px-6 lg:px-12">
+<body class="min-h-screen py-8 px-4 sm:px-6 lg:px-8 xl:px-12">
 
-  <div class="max-w-6xl mx-auto space-y-9">
+  <div class="max-w-[1580px] w-full mx-auto space-y-8">
 
     <!-- Header (Clean Minimalist, Borderless Tags Only) -->
     <header class="border-b border-zinc-200 pb-7 space-y-3">
@@ -54,7 +54,7 @@
           共穿透分析 2,287 条真实跟帖 (含今日 21 篇最新监测)
         </div>
       </div>
-      <p class="text-xs sm:text-sm text-zinc-500 max-w-3xl leading-relaxed">
+      <p class="text-xs sm:text-sm text-zinc-500 max-w-5xl leading-relaxed">
         本报告对 2026 年 6 月 1 日至 9 月 10 日期间小红书平台关于“美的洗碗机”的公开笔记、正文描述、评论区跟帖及官方客服介入留痕进行如实采集与白描记录。不做修饰性推论，直陈事实与原声。
       </p>
     </header>
@@ -532,7 +532,7 @@
               <circle cx="11" cy="11" r="8"></circle>
               <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
             </svg>
-            <input type="text" id="searchInput" placeholder="搜索标题 / 博主 / 客服文本..." class="pl-8 pr-3 py-1.5 text-xs bg-zinc-50 border border-zinc-200 rounded-lg focus:outline-none focus:border-zinc-400 w-44 sm:w-56">
+            <input type="text" id="searchInput" placeholder="搜索标题 / 博主 / 客服文本..." class="pl-8 pr-3 py-1.5 text-xs bg-zinc-50 border border-zinc-200 rounded-lg focus:outline-none focus:border-zinc-400 w-44 sm:w-64 lg:w-72">
           </div>
 
           <select id="officialSelect" class="px-2.5 py-1.5 text-xs bg-zinc-50 border border-zinc-200 rounded-lg focus:outline-none focus:border-zinc-400 text-zinc-700">
@@ -564,7 +564,7 @@
       </div>
 
       <!-- Pure Minimalist Clean Table, No Bordered Badges -->
-      <div class="overflow-x-auto max-h-[580px] overflow-y-auto border border-zinc-200 rounded-lg bg-white">
+      <div class="overflow-x-auto max-h-[640px] overflow-y-auto border border-zinc-200 rounded-lg bg-white">
         <table class="min-w-full text-xs text-left" id="dataTable">
           <thead class="bg-zinc-50 text-zinc-500 font-medium sticky top-0 border-b border-zinc-200 z-10">
             <tr>
@@ -591,7 +591,7 @@
 
     <!-- Modal: Note Details & Comment Tree (Borderless Minimalist) -->
     <div id="commentModal" class="fixed inset-0 bg-zinc-900/40 backdrop-blur-xs z-50 flex items-center justify-center p-4 hidden">
-      <div class="bg-white rounded-xl max-w-2xl w-full max-h-[85vh] flex flex-col border border-zinc-200 shadow-2xl overflow-hidden">
+      <div class="bg-white rounded-xl max-w-3xl lg:max-w-4xl w-full max-h-[88vh] flex flex-col border border-zinc-200 shadow-2xl overflow-hidden">
         <div class="p-5 border-b border-zinc-100 flex justify-between items-start bg-zinc-50/70">
           <div class="space-y-1.5">
             <div class="flex items-center gap-2 text-[11px] text-zinc-500 font-mono">
@@ -686,7 +686,7 @@
             ${n.createdAt}
             ${isToday ? '<span class="ml-1 px-1 py-0.2 rounded text-[9px] bg-rose-900 text-white">今日</span>' : ''}
           </td>
-          <td class="py-2.5 px-3 font-medium text-zinc-900 max-w-[280px] truncate" title="${n.title}">${n.title || '（无标题）'}</td>
+          <td class="py-2.5 px-3 font-medium text-zinc-900 max-w-[360px] lg:max-w-[480px] 2xl:max-w-[580px] truncate" title="${n.title}">${n.title || '（无标题）'}</td>
           <td class="py-2.5 px-3 text-zinc-500 whitespace-nowrap">${n.user || '匿名'}</td>
           <td class="py-2.5 px-3 whitespace-nowrap">${getModelBadge(n.model)}</td>
           <td class="py-2.5 px-3 whitespace-nowrap text-zinc-600">${n.category}</td>
